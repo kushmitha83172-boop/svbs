@@ -270,6 +270,47 @@
       </div>
     </div>
   </section>
+<!-- mysuru outside places -->
+  <section id="outside">
+  <div class="container">
+  <h4 class="text-center text-warning mt-3 mb-2">Mysuru Outside Places</h4>
+      <!-- <div class="row g-4"> -->
+        <div class="col-md-4">
+          <div class="tour-card">
+            <img class="auto-change-ha" src="">
+              <!-- Overlay Content -->
+            <div class="overlay">
+              <div>
+                Hassan is a historic city in Karnataka known for its rich cultural heritage and beautiful temples. It serves as the gateway to famous Hoysala architecture sites like Belur Temple and Halebidu Temple. The district is also surrounded by scenic hills, waterfalls, and lush greenery.
+              </div>
+            </div>
+            <h5>Hassan</h5>
+            <p>Hassan – where history, temples, and nature meet.</p>
+            <a href="./hassan.html">
+            <button>Explore More</button>
+          </a>
+          </div>
+          <script>
+            const autoChangeha = document.querySelector('.auto-change-ha');
+            const autoChangehaImages = [
+             'https://res.cloudinary.com/svbs/image/upload/v1773664157/Lakshminarasimha_temple_Nuggehalli-5_lwy7kv.jpg',
+             'https://res.cloudinary.com/svbs/image/upload/v1773664153/Jenukallu_Gudda_yellapura-5_iwqfxm.jpg',
+             'https://res.cloudinary.com/svbs/image/upload/v1773664149/ishwara-temple-arsikere-5_wnc5i9.jpg',
+             'https://res.cloudinary.com/svbs/image/upload/v1773664123/Bisle-ghat-sakleshpur-4_pnhj63.jpg',
+             'https://res.cloudinary.com/svbs/image/upload/v1773664122/Bettada_Byraveshwara_Temple-5_c5szzv.jpg'
+            ];
+            let autoChangehaIndex = 0;
+            // Set first image immediately
+            autoChangeha.src = autoChangehaImages[0];
+            // Start interval
+            setInterval(() => {
+              autoChangehaIndex = (autoChangehaIndex + 1) % autoChangehaImages.length;
+              autoChangeha.setAttribute("src", autoChangehaImages[autoChangehaIndex]);
+            }, 2000);
+          </script>
+        </div>
+      
+      
 
   <!-- vehicles -->
   <section id="vehicles">
