@@ -487,6 +487,39 @@
             }, 2000);
           </script>
         </div>
+         <div class="col-md-4">
+          <div class="tour-card">
+            <img class="auto-changecd" src="">
+            <!-- Overlay Content -->
+            <div class="overlay">
+              <div>
+                <h5> Chikkavole Dam </h5> A peaceful reservoir surrounded by greenery and village landscapes. It is a calm place ideal for relaxing and enjoying nature. The scenic view during sunrise and sunset is especially beautiful.
+              </div> 
+            </div>
+            <h5>Chikkahole Dam</h5>
+            <p>Breathtaking views and peaceful vibes</p>
+            <button>know more</button>
+          </div>
+          <script>
+            const autoChangecd = document.querySelector('.auto-changecd');
+            const autoChangeImagescd = [
+              'https://res.cloudinary.com/svbs/image/upload/v1773400960/chikkahole_dam2_cawlqp.png',
+              'https://res.cloudinary.com/svbs/image/upload/v1773400958/chikkahole_dam1_zw3mmj.png',
+              'https://photos.wikimapia.org/p/00/00/32/78/74_big.jpg',
+              'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/14/f4/e8/26/gundal-dam.jpg?w=500&h=500&s=1',
+              'https://chnpolice.karnataka.gov.in/storage/pdf-files/6%20Suvarnavati%20Dam.jpg'
+                         ];
+            let autoChangeIndexcd = 0;
+            // Set first image immediately
+            autoChangecd.src = autoChangeImagescd[0];
+            // Start interval
+            setInterval(() => {
+              autoChangeIndexcd = (autoChangeIndexcd + 1) % autoChangeImagescd.length;
+              autoChangecd.setAttribute("src", autoChangeImagescd[autoChangeIndexcd]);
+            }, 2000);
+          </script>
+        </div>
+
       </section>
 
   <!-- contact -->
